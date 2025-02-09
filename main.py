@@ -513,8 +513,10 @@ def stream_to_youtube(input_file=None, rtmp_url=None, stream_key=None):
                 # vcodec="h264_vaapi",
                 # vaapi_device="/dev/dri/renderD128",
                 # vcodec="h264_qsv",
-                vcodec="libx264",
-                acodec="aac",
+                # vcodec="libx264",
+                # acodec="aac",
+                vcodec="copy",
+                acodec="copy",
                 **{
                     "b:v": "4500k",  # Video bitrate
                     "b:a": "192k",  # Audio bitrate
